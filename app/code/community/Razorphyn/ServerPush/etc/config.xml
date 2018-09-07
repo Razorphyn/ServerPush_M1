@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+ 
+<config>
+    <modules>
+        <Razorphyn_ServerPush>
+            <version>0.1.0</version>
+        </Razorphyn_ServerPush>
+    </modules>
+</config>
+
+<frontend>
+	<events>
+		<http_response_send_before>
+			<observers>
+				<setheaderhttp2>
+					<class>Razorphyn_ServerPush_Observer_Observer</class>
+					<method>beforeSendResponse</method>
+				</setheaderhttp2>
+			</observers>
+		</http_response_send_before>
+	</events>
+</frontend>

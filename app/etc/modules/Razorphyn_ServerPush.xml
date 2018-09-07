@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+ 
+<config>
+    <modules>
+        <Razorphyn_ServerPush>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Razorphyn_ServerPush>
+    </modules>
+</config>
